@@ -22,14 +22,14 @@
 }
 
 input {
-    width: 100%;
+    width: 95%;
     height: 30px;
     border-radius: 40px;
     border-color: aqua;
     background-color: transparent;
     border-style: solid;
+    padding-left: 20px;
     border-width: 1px;
-
 }
 .fields-contain {
     width: 100%;
@@ -46,4 +46,23 @@ input {
     height: 40px;
     width: 95px;
     margin-top: 20px;
+}
+.signup-btn:hover {
+    color: rgb(39, 39, 39);
+}
+#lstname-contain {
+    width: 49%;
+}
+#fstname-contain {
+    width: 49%;
+}
+
+label {
+    position: relative;
+    font-size: 9px;
+    top: 7px;
+    left: 13px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgba(127, 255, 212, 0.219);
 }
