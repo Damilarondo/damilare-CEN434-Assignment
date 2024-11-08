@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of Last Two Digits</title>
+</head>
+<body>
+    <h2>Calculate Factorial of the Last Two Digits of Matriculation Number</h2>
+    
+    <p>Matriculation number: <strong>20CJ027450</strong></p>
+    <p>Last two digits: <strong>50</strong></p>
+    
+    <!-- Button to trigger the calculation -->
+    <button onclick="calculateFactorial()">Calculate Factorial of 50</button>
+    
+    <!-- Display the result here -->
+    <p id="result"></p>
+
+    <script>
+        function factorial(n) {
+            if (n === 0 || n === 1) return 1;
+            let result = 1;
+            for (let i = 2; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+
+        function calculateFactorial() {
+            const lastTwoDigits = 50;
+            const factorialResult = factorial(lastTwoDigits);
+
+            // Display the result
+            document.getElementById("result").innerText = 
+                `Factorial of ${lastTwoDigits} is: ${factorialResult}`;
+        }
+    </script>
+</body>
+</html>
